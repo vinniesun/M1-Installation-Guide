@@ -18,7 +18,7 @@ make && \
 sudo make install
 ```
 * Test if the installation was successful by creating a C++ file called test.cpp, and enter the following code into the file:
-```C++
+```C++ title="test.cpp"
 #include <GLFW/glfw3.h>
 #include <iostream>
 
