@@ -10,7 +10,7 @@ To install OpenGL (GLFW) on the M1 Macs, go to Terminal and follow the steps bel
 * Open Terminal
 * Go to the folder that will store the GLFW files
 * In Terminal, enter the following commands:
-```
+``` shell
 git clone https://github.com/glfw/glfw.git && \
 cd glfw && \
 cmake -DCMAKE_OSX_ARCHITECTURES=arm64 . && \
@@ -18,7 +18,7 @@ make && \
 sudo make install
 ```
 * Test if the installation was successful by creating a C++ file called test.cpp, and enter the following code into the file:
-```
+```C++
 #include <GLFW/glfw3.h>
 #include <iostream>
 
@@ -81,15 +81,15 @@ int main(void)
 }
 ```
 * Compile test.cpp with the following command:
-```
+``` shell
 g++ test.cpp -o test -std=c++17 -framework Cocoa -framework OpenGL -framework IOKit -lglfw3
 ```
 * Launch the code with the following command:
-```
+```shell
 ./test
 ```
 * We should see the following output message in terminal:
-```
+```shell
 Renderer: Apple M1
 OpenGL version supported: 4.1 Metal - 76.3
 ```
