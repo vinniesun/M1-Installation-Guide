@@ -84,6 +84,7 @@ int main(void)
 ``` shell
 g++ test.cpp -o test -std=c++17 -framework Cocoa -framework OpenGL -framework IOKit -lglfw3
 ```
+Note: glfw3 is located in: /usr/local/lib
 * Launch the code with the following command:
 ```shell
 ./test
